@@ -1,0 +1,45 @@
+<h3>Add Contact</h3>
+<div class="Main">
+  <form (ngSubmit)="onSubmit()">
+    <div class="Contact">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="fname" required [(ngModel)]="contact.fname" name="fname">
+    </div>
+
+    <div class="A">
+      <label for="name">Last Name</label>
+      <input type="text" class="form-control" id="lname" required [(ngModel)]="contact.lname" name="lname">
+    </div>
+	
+	 <div class="B">
+      <label for="name">Email</label>
+      <input type="email" class="form-control" id="email" required [(ngModel)]="contact.email" name="email">
+    </div>
+	
+	 <div class="C">
+      <label for="name">Number</label>
+      <input type="number" maxlength="10" class="form-control" id="number" required [(ngModel)]="contact.number" name="number">
+    </div>
+	
+	 <div class="D">
+      <label for="name">Status</label>
+      <input type="text" class="form-control" id="status" required [(ngModel)]="contact.status" name="status">
+    </div>
+	
+
+<div class="submit">
+      <label for="name"></label>
+<button id="button" type="submit" class="btn btn-success">Submit</button>
+    </div>
+
+    <div>
+      <div class="empty"></div>
+    
+    </div>
+  </form>
+</div>
+
+<!--<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+<!--</div>-->

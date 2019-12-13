@@ -1,0 +1,37 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Contacts List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>Status</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let contact of contacts | async">
+            <td>{{contact.fname}}</td>
+            <td>{{contact.lname}}</td>
+            <td>{{contact.email}}</td>
+            <td>{{contact.number}}</td>
+            <td>{{contact.status}}</td>
+
+            <td><button (click)="deleteContact(contact.id)" class="btn btn-danger">Delete</button>
+ 	  <a routerLink="/update/{{contact.id}}"><button class="btn btn-success pull-right" > Update</button></a>
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+
+  

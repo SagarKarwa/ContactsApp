@@ -1,0 +1,48 @@
+.main{
+    
+    width: 100%;
+    float: left;
+    height:400px;
+}
+.Contact{
+    width: 15%;
+    float: left;
+    height:100px;
+}
+.A{
+    width: 15%;
+    float: left;
+    height:100px;
+}
+.B{
+    width: 15%;
+    float: left;
+    height:100px;
+}
+.C{
+    width: 15%;
+    float: left;
+    height:100px;
+}
+.D{
+    width: 15%;
+    float: left;
+    height:100px;
+}
+.Selected{
+    width: 15%;
+    float: left;
+    height:100px;
+}
+.form-control{
+    width: 100px;
+}
+.submit{
+      width: 15%;
+    float: left;
+    height:100px;
+    margin-left: 35% ;
+}
+#button{
+    width: 240px;
+}
